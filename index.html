@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Bimantara Luffy untuk Ketua OSIS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "outline": "#926f69",
+                        "surface-container": "#f1eee5",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-container": "#745c00",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#ffcac2",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "surface": "#fcf9f0",
+                        "primary": "#910000",
+                        "surface-container-low": "#f6f3ea",
+                        "on-secondary-fixed-variant": "#574500",
+                        "secondary-container": "#fed65b",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffdad4",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "background": "#fcf9f0",
+                        "inverse-surface": "#31312b",
+                        "surface-bright": "#fcf9f0",
+                        "surface-container-high": "#ebe8df",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dddad1",
+                        "primary-container": "#be0000",
+                        "on-background": "#1c1c17",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#5d5d5d",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#410000",
+                        "inverse-primary": "#ffb4a8",
+                        "surface-container-highest": "#e5e2da",
+                        "inverse-on-surface": "#f4f1e8",
+                        "on-tertiary-container": "#d6d6d6",
+                        "surface-variant": "#e5e2da",
+                        "secondary": "#735c00",
+                        "tertiary": "#454545",
+                        "on-surface": "#1c1c17",
+                        "surface-tint": "#c00301",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-surface-variant": "#5d3f3b",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-primary-fixed-variant": "#930000",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#ffe088",
+                        "tertiary-fixed": "#e2e2e2",
+                        "outline-variant": "#e7bdb6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-offset": "8px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Anton"],
+                        "body-lg": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-md": ["Anton"],
+                        "body-md": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Anton"],
+                        "headline-xl": ["Anton"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "label-caps": ["14px", { "lineHeight": "16px", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "36px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "36px", "fontWeight": "400" }],
+                        "headline-xl": ["84px", { "lineHeight": "80px", "letterSpacing": "0.05em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .wanted-card {
+            border: 8px solid #1c1c17;
+            box-shadow: 8px 8px 0px 0px #1c1c17;
+            background-color: #fcf9f0;
+        }
+        .brutalist-button {
+            border: 4px solid #1c1c17;
+            box-shadow: 4px 4px 0px 0px #1c1c17;
+            transition: all 0.2s ease;
+        }
+        .brutalist-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #1c1c17;
+        }
+        .brutalist-input {
+            border: 4px solid #1c1c17;
+        }
+        .brutalist-input:focus {
+            outline: none;
+            border-color: #fed65b;
+            box-shadow: 4px 4px 0px 0px #fed65b;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface border-b-4 border-on-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<div class="font-headline-md text-headline-md uppercase text-primary">DEWAN TOPI JERAMI</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">ANGGOTA</a>
+<a class="font-label-caps text-label-caps text-primary underline decoration-4 underline-offset-8 uppercase" href="#">MISI</a>
+<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">PRESTASI</a>
+<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">PROGRAM</a>
+<button class="bg-primary-container text-on-primary font-headline-md text-headline-md px-6 py-2 brutalist-button uppercase">GABUNG BERSAMA KAMI</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="min-h-screen pt-32 px-margin-mobile md:px-margin-desktop pb-24 flex flex-col md:flex-row items-center justify-between gap-gutter">
+<div class="w-full md:w-1/2 flex flex-col gap-6 z-10 relative">
+<div class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-4 py-2 uppercase self-start">
+                DICARI
+            </div>
+<h1 class="font-headline-xl text-headline-xl uppercase text-on-background leading-none">
+                PEMIMPIN UNTUK <span class="text-primary-container">ERA BARU</span>
+</h1>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface-variant">
+                BIMANTARA LUFFY
+            </h2>
+<p class="font-body-lg text-body-lg max-w-xl">
+                Siap merombak OSIS? Gabung bersama kami dan mari berlayar menuju akademi yang lebih seru dan baik. Pengecut dilarang ikut.
+            </p>
+<div class="flex gap-4 mt-4">
+<button class="bg-primary-container text-on-primary font-headline-md text-headline-md px-8 py-3 brutalist-button uppercase">PILIH LUFFY</button>
+<button class="bg-secondary-container text-on-secondary-container font-headline-md text-headline-md px-8 py-3 brutalist-button uppercase">LIHAT PRESTASI</button>
+</div>
+</div>
+<div class="w-full md:w-1/2 mt-12 md:mt-0 relative">
+<div class="wanted-card p-4 rotate-3 transform hover:rotate-0 transition-transform duration-300">
+<div class="bg-primary-container text-on-primary text-center py-2 mb-4 border-4 border-on-background font-headline-lg text-headline-lg uppercase">
+                    DICARI
+                </div>
+<img alt="Bimantara Luffy Wanted Poster" class="w-full h-auto border-4 border-on-background grayscale contrast-125 object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida/AEtjO1V4LVULTQ2PiyUprXIgvmQc1nXVk3YpIP4cgCvZReLkfejW_ajiBxoZ65I4-FAmmmnjYZSuUF40jDuqjW4Y4Hc6kUJsGvRtXBTNc7TQa-1kW5Tq-DI_uQ5zltvraeKhhvZoVjhS-yEHEDLjLiw4SImewm389S6ttGI2stAem5n_bRDfuDxIzwTf0fQpBddZ3fKYingUdWVB51Te_Eda98UxK8H0281bUooQLtO7XKGPvtV4Sc46-v2X">
+<div class="mt-4 flex justify-between items-center font-headline-md text-headline-md">
+<span class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined font-variation-settings-'FILL'1">payments</span>
+                        HADIAH
+                    </span>
+<span class="text-on-background">3,000,000,000</span>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -z-10 top-10 -left-10 w-32 h-32 bg-secondary-container border-4 border-on-background rotate-12"></div>
+<div class="absolute -z-10 bottom-10 -right-10 w-24 h-24 bg-primary-fixed-dim border-4 border-on-background -rotate-12 rounded-full"></div>
+</div>
+</section>
+<!-- Latar Belakang (Log Book) -->
+
+<!-- Visi & Misi (Bento Grid) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-12 text-center text-on-background">
+            RENCANA BESAR KAMI
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-6xl mx-auto">
+<!-- Visi (Hero Card) -->
+<div class="md:col-span-12 wanted-card p-10 bg-primary-container text-on-primary flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-6xl mb-4">sailing</span>
+<h3 class="font-headline-md text-headline-md uppercase mb-4 opacity-80">VISI</h3>
+<p class="font-headline-lg-mobile md:font-headline-lg uppercase leading-tight">
+                    "MENJADIKAN OSIS SEBAGAI ARMADA TERKUAT UNTUK ASPIRASI SISWA"
+                </p>
+</div>
+<!-- Misi 1 -->
+<div class="md:col-span-4 wanted-card p-8 bg-surface-container flex flex-col hover:-translate-y-2 transition-transform">
+<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">1</div>
+<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">SISTEM ARAH JELAS</h4>
+<p class="font-body-md text-body-md">Meningkatkan transparansi dana dengan sistem pelacakan terbuka. Setiap koin tercatat dengan jelas.</p>
+<div class="mt-auto pt-6">
+<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#TRANSPARANSI</span>
+</div>
+</div>
+<!-- Misi 2 -->
+<div class="md:col-span-4 wanted-card p-8 bg-secondary-container flex flex-col hover:-translate-y-2 transition-transform">
+<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">2</div>
+<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">TANTANGAN MINGGUAN</h4>
+<p class="font-body-md text-body-md text-on-secondary-container">Mengaktifkan kembali ekstrakurikuler sebagai 'Quest' mingguan dengan sistem hadiah.</p>
+<div class="mt-auto pt-6">
+<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#AKSI</span>
+</div>
+</div>
+<!-- Misi 3 -->
+<div class="md:col-span-4 wanted-card p-8 bg-surface-container flex flex-col hover:-translate-y-2 transition-transform">
+<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">3</div>
+<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">IKATAN PERSAHABATAN</h4>
+<p class="font-body-md text-body-md">Memperkuat solidaritas antar angkatan. Tidak ada siswa yang tertinggal dalam pelayaran ini.</p>
+<div class="mt-auto pt-6">
+<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#PERSATUAN</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Program Unggulan -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-high border-t-8 border-on-background">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-16 inline-block bg-primary-container text-on-primary border-4 border-on-background px-8 py-3 shadow-[8px_8px_0px_0px_#1c1c17] rotate-2">
+            PROGRAM UNGGULAN
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<!-- Program 1 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+<div class="relative bg-surface border-4 border-on-background p-8 h-full z-10 flex flex-col">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-5xl text-primary-container">festival</span>
+<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md">S</div>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">FESTIVAL SEKOLAH</h3>
+<p class="font-body-md text-body-md mb-6 flex-grow">Pentas seni tahunan berskala masif dengan tema petualangan interaktif. Bukan sekadar pensi biasa.</p>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+<div class="relative bg-secondary-container border-4 border-on-background p-8 h-full z-10 flex flex-col">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-5xl text-on-secondary-container">hub</span>
+<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md bg-surface">A</div>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">PUSAT ASPIRASI SISWA</h3>
+<p class="font-body-md text-body-md mb-6 flex-grow text-on-secondary-container">Platform digital terenkripsi untuk aspirasi, ide gila, dan pengaduan. Jalur langsung ke kapten.</p>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+<div class="relative bg-surface border-4 border-on-background p-8 h-full z-10 flex flex-col">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-5xl text-primary-container">military_tech</span>
+<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md">S</div>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">PENGHARGAAN SISWA BERPRESTASI</h3>
+<p class="font-body-md text-body-md mb-6 flex-grow">Penghargaan bulanan untuk siswa yang mencapai 'bounty' (prestasi) di bidang akademik maupun non-akademik.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-12 text-on-background border-b-8 border-primary-container inline-block pb-2">
+                TANYA JAWAB (FAQ)
+            </h2>
+<div class="space-y-6">
+<!-- FAQ Item 1 -->
+<div class="border-4 border-on-background bg-surface-container-low shadow-[4px_4px_0px_0px_#1c1c17]">
+<details class="group">
+<summary class="flex justify-between items-center font-headline-md text-headline-md p-6 cursor-pointer list-none uppercase">
+<span class="">Apakah 'Festival Sekolah' mungkin dilakukan?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-4xl">arrow_drop_down</span>
+</span>
+</summary>
+<div class="p-6 pt-0 font-body-lg text-body-lg border-t-4 border-on-background bg-surface">
+<p class="">Tentu saja. Kami telah menyusun realokasi anggaran menggunakan sistem Arah Jelas. Ini hanya membutuhkan pengalihan dana dari acara seremonial yang tidak perlu ke inisiatif aktif siswa.</p>
+</div>
+</details>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-4 border-on-background bg-surface-container-low shadow-[4px_4px_0px_0px_#1c1c17]">
+<details class="group">
+<summary class="flex justify-between items-center font-headline-md text-headline-md p-6 cursor-pointer list-none uppercase">
+<span class="">Apa yang membuatmu berbeda dari ketua OSIS sebelumnya?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-4xl">arrow_drop_down</span>
+</span>
+</summary>
+<div class="p-6 pt-0 font-body-lg text-body-lg border-t-4 border-on-background bg-surface">
+<p class="">Saya tidak peduli dengan politik; saya peduli dengan anggota. Kurangi bicara di rapat, perbanyak aksi di lapangan.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact / Call to Action -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-on-background text-surface relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none">
+<img alt="OSIS Grand Line Logo Ghost" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WDAta3o3TaxPbMO8AoPq1I1haHp3mwXhJPR-NzVGkT_uGCVKtVq6X5tMrXbhRqbwdL4wnFHLxHk0lZHEQJccl3RTCbhw2oEzjWJtN7WHCX8u6JFN-LlKvz5H6Ya7K8pdwBSmkVrsgjRCg67_G-e_5_bVBENZpi0ckBosi1XwfBl6eLZJ8uR1HBH_jpHY7rFdPZGV_FlVtxp22ZMeC6aPf8_FHXZxixI4qiBqkx3vI3Dx4sva_V6GIG">
+</div>
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<div class="md:w-1/2">
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary mb-6">AYO BERGABUNG SEKARANG</h2>
+<p class="font-body-lg text-body-lg mb-8 text-surface-variant max-w-md">
+                    Kapal akan segera meninggalkan pelabuhan. Apakah kamu ikut naik atau tertinggal? Hubungi kami lewat Den Den Mushi.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-2 bg-surface text-on-background font-label-caps text-label-caps px-6 py-3 border-4 border-surface shadow-[4px_4px_0px_0px_#be0000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#be0000] transition-all uppercase" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+                        INSTAGRAM
+                    </a>
+<a class="flex items-center gap-2 bg-surface text-on-background font-label-caps text-label-caps px-6 py-3 border-4 border-surface shadow-[4px_4px_0px_0px_#be0000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#be0000] transition-all uppercase" href="#">
+<span class="material-symbols-outlined">forum</span>
+                        WHATSAPP
+                    </a>
+</div>
+</div>
+<div class="md:w-1/3 bg-surface p-8 border-8 border-primary shadow-[12px_12px_0px_0px_#fed65b] transform rotate-3">
+<img alt="OSIS Grand Line Logo" class="w-full h-auto mb-6" src="https://lh3.googleusercontent.com/aida/AEtjO1WDAta3o3TaxPbMO8AoPq1I1haHp3mwXhJPR-NzVGkT_uGCVKtVq6X5tMrXbhRqbwdL4wnFHLxHk0lZHEQJccl3RTCbhw2oEzjWJtN7WHCX8u6JFN-LlKvz5H6Ya7K8pdwBSmkVrsgjRCg67_G-e_5_bVBENZpi0ckBosi1XwfBl6eLZJ8uR1HBH_jpHY7rFdPZGV_FlVtxp22ZMeC6aPf8_FHXZxixI4qiBqkx3vI3Dx4sva_V6GIG">
+<button class="w-full bg-primary-container text-on-primary font-headline-md text-headline-md py-4 border-4 border-on-background hover:bg-on-background hover:text-surface transition-colors uppercase">
+                    GABUNG BERSAMA KAMI
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-gutter bg-on-background border-t-8 border-primary">
+<div>
+<div class="font-headline-lg text-headline-lg-mobile text-primary uppercase mb-4">DEWAN TOPI JERAMI</div>
+<p class="font-body-md text-body-md text-surface uppercase">© 2024 DEWAN AKADEMI GRAND LINE. TIDAK ADA HADIAH UNTUK PENGECUT.</p>
+</div>
+<div class="flex flex-wrap gap-6">
+<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Arah Jelas</a>
+<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Kode Laut</a>
+<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Den Den Mushi</a>
+<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Pasar Gelap</a>
+</div>
+</footer>
+
+
+</body></html>
