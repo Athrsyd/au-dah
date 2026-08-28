@@ -1,346 +1,1560 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Bimantara Luffy untuk Ketua OSIS</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-error-container": "#93000a",
-                        "error-container": "#ffdad6",
-                        "outline": "#926f69",
-                        "surface-container": "#f1eee5",
-                        "secondary-fixed-dim": "#e9c349",
-                        "on-secondary-container": "#745c00",
-                        "on-tertiary": "#ffffff",
-                        "on-primary-container": "#ffcac2",
-                        "on-tertiary-fixed": "#1b1b1b",
-                        "surface": "#fcf9f0",
-                        "primary": "#910000",
-                        "surface-container-low": "#f6f3ea",
-                        "on-secondary-fixed-variant": "#574500",
-                        "secondary-container": "#fed65b",
-                        "error": "#ba1a1a",
-                        "primary-fixed": "#ffdad4",
-                        "primary-fixed-dim": "#ffb4a8",
-                        "background": "#fcf9f0",
-                        "inverse-surface": "#31312b",
-                        "surface-bright": "#fcf9f0",
-                        "surface-container-high": "#ebe8df",
-                        "on-error": "#ffffff",
-                        "surface-dim": "#dddad1",
-                        "primary-container": "#be0000",
-                        "on-background": "#1c1c17",
-                        "surface-container-lowest": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "tertiary-container": "#5d5d5d",
-                        "on-secondary-fixed": "#241a00",
-                        "on-primary-fixed": "#410000",
-                        "inverse-primary": "#ffb4a8",
-                        "surface-container-highest": "#e5e2da",
-                        "inverse-on-surface": "#f4f1e8",
-                        "on-tertiary-container": "#d6d6d6",
-                        "surface-variant": "#e5e2da",
-                        "secondary": "#735c00",
-                        "tertiary": "#454545",
-                        "on-surface": "#1c1c17",
-                        "surface-tint": "#c00301",
-                        "on-tertiary-fixed-variant": "#474747",
-                        "on-surface-variant": "#5d3f3b",
-                        "tertiary-fixed-dim": "#c6c6c6",
-                        "on-primary-fixed-variant": "#930000",
-                        "on-primary": "#ffffff",
-                        "secondary-fixed": "#ffe088",
-                        "tertiary-fixed": "#e2e2e2",
-                        "outline-variant": "#e7bdb6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-offset": "8px",
-                        "margin-desktop": "64px",
-                        "unit": "4px",
-                        "margin-mobile": "16px",
-                        "gutter": "24px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Anton"],
-                        "body-lg": ["JetBrains Mono"],
-                        "label-caps": ["JetBrains Mono"],
-                        "headline-md": ["Anton"],
-                        "body-md": ["JetBrains Mono"],
-                        "headline-lg-mobile": ["Anton"],
-                        "headline-xl": ["Anton"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["48px", { "lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
-                        "label-caps": ["14px", { "lineHeight": "16px", "fontWeight": "700" }],
-                        "headline-md": ["32px", { "lineHeight": "36px", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["36px", { "lineHeight": "36px", "fontWeight": "400" }],
-                        "headline-xl": ["84px", { "lineHeight": "80px", "letterSpacing": "0.05em", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .wanted-card {
-            border: 8px solid #1c1c17;
-            box-shadow: 8px 8px 0px 0px #1c1c17;
-            background-color: #fcf9f0;
-        }
-        .brutalist-button {
-            border: 4px solid #1c1c17;
-            box-shadow: 4px 4px 0px 0px #1c1c17;
-            transition: all 0.2s ease;
-        }
-        .brutalist-button:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px 0px #1c1c17;
-        }
-        .brutalist-input {
-            border: 4px solid #1c1c17;
-        }
-        .brutalist-input:focus {
-            outline: none;
-            border-color: #fed65b;
-            box-shadow: 4px 4px 0px 0px #fed65b;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Line Initiative — Kampanye OSIS</title>
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <style type="text/tailwindcss">
+    /* ── Design Tokens ─────────────────────────────────────── */
+    @theme {
+      /* Colors */
+      --color-parchment:       #fcf9f0;
+      --color-parchment-mid:   #f1eee5;
+      --color-parchment-dark:  #e5e2da;
+      --color-ink:             #1c1c17;
+      --color-ink-muted:       #5d3f3b;
+      --color-haki-red:        #910000;
+      --color-haki-red-vivid:  #be0000;
+      --color-haki-light:      #ffcac2;
+      --color-grand-gold:      #fed65b;
+      --color-grand-gold-dim:  #e9c349;
+      --color-gold-text:       #735c00;
+      --color-outline:         #926f69;
+
+      /* Typography */
+      --font-display:   "Anton", sans-serif;
+      --font-mono:      "JetBrains Mono", monospace;
+
+      /* Spacing */
+      --spacing-gutter:  24px;
+    }
+
+    /* ── Base ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-mono);
+      background-color: var(--color-parchment);
+      color: var(--color-ink);
+      overflow-x: hidden;
+    }
+*{
+          scroll-behavior: smooth;
+
+}
+
+    #hero-candidate-name {
+      display: inline-block;
+      min-height: 1.3em;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    #hero-candidate-name::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 0.9em;
+      background: var(--color-ink);
+      vertical-align: -0.1em;
+      margin-left: 0.12em;
+      animation: blink-cursor 0.8s steps(1, end) infinite;
+    }
+
+    @keyframes blink-cursor {
+      50% { opacity: 0; }
+    }
+    ::selection {
+      background-color: var(--color-haki-red-vivid);
+      color: #fff;
+    }
+
+    /* ── Typography helpers ─────────────────────────────────── */
+    .font-display   { font-family: var(--font-display); }
+    .font-mono      { font-family: var(--font-mono); }
+
+    /* ── Brutalist components ───────────────────────────────── */
+
+    /* Wanted card frame */
+    .wanted-card {
+      border: 8px solid var(--color-ink);
+      box-shadow: 8px 8px 0 0 var(--color-ink);
+      background-color: var(--color-parchment);
+    }
+
+    /* Standard card frame */
+    .card {
+      border: 4px solid var(--color-ink);
+      box-shadow: 4px 4px 0 0 var(--color-ink);
+    }
+
+    /* Hard-shadow lift (used on program cards) */
+    .shadow-lift-bg {
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-ink);
+      transform: translate(8px, 8px);
+      transition: transform 0.15s ease;
+    }
+    .group:hover .shadow-lift-bg {
+      transform: translate(10px, 10px);
+    }
+
+    /* Primary button */
+    .btn-primary {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      background-color: var(--color-haki-red-vivid);
+      color: #fff !important;
+      border: 4px solid var(--color-ink);
+      box-shadow: 4px 4px 0 0 var(--color-ink);
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      text-decoration: none;
+      line-height: 1;
+    }
+    .btn-primary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+
+    /* Secondary button */
+    .btn-secondary {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      background-color: var(--color-grand-gold);
+      color: var(--color-gold-text);
+      border: 4px solid var(--color-ink);
+      box-shadow: 4px 4px 0 0 var(--color-ink);
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      text-decoration: none;
+      line-height: 1;
+    }
+    .btn-secondary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+
+    /* Ghost button (dark bg variant) */
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--color-parchment);
+      color: var(--color-ink);
+      border: 4px solid var(--color-parchment);
+      box-shadow: 4px 4px 0 0 var(--color-haki-red-vivid);
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      text-decoration: none;
+    }
+    .btn-ghost:hover {
+      transform: translateY(-2px);
+      box-shadow: 6px 6px 0 0 var(--color-haki-red-vivid);
+    }
+
+    /* Chip / tag */
+    .chip {
+      display: inline-block;
+      background-color: var(--color-ink);
+      color: var(--color-parchment);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+    }
+
+    /* FAQ Details */
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] summary .faq-arrow { transform: rotate(180deg); }
+    .faq-arrow { transition: transform 0.2s ease; }
+
+    /* Section divider */
+    .section-divider {
+      border-top: 8px solid var(--color-ink);
+    }
+
+    /* Nav active link */
+    .nav-link-active {
+      color: var(--color-haki-red);
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 6px;
+    }
+
+    /* Material icons baseline align */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    /* Image placeholder box */
+    .img-placeholder {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background-color: var(--color-parchment-dark);
+      border: 4px solid var(--color-ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-ink-muted);
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .img-placeholder img[src=""] { display: none; }
+    .img-placeholder:has(img[src=""]) {}
+
+    /* Logo placeholder */
+    .logo-placeholder {
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: var(--color-parchment-dark);
+      border: 4px solid var(--color-ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-ink-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Responsive helpers */
+    html { scroll-padding-top: 88px; }
+    img { max-width: 100%; }
+
+    #mobile-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #mobile-links a {
+      padding: 0.5rem 0;
+      font-size: 1rem !important;
+    }
+
+    #countdown-wrap {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: min(100%, 1000px);
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    #countdown-label {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #000000;
+      text-align: center;
+    }
+
+    #countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .countdown-box {
+      background-color: var(--color-parchment);
+      border: 4px solid var(--color-haki-red-vivid);
+      box-shadow: 6px 6px 0 0 var(--color-grand-gold);
+      padding: 1rem 0.75rem;
+      text-align: center;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .countdown-number {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1;
+      color: var(--color-ink);
+      margin-bottom: 0.35rem;
+    }
+
+    .countdown-text {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--color-ink-muted);
+      letter-spacing: 0.08em;
+    }
+
+    #misi-grid > div:nth-child(4),
+    #misi-grid > div:nth-child(5) {
+      grid-column: span 3;
+      width: 100%;
+      justify-self: stretch;
+    }
+
+    #mobile-cta .btn-primary {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 1100px) {
+      #nav { padding-left: 2rem !important; padding-right: 2rem !important; }
+      #hero { padding-left: 2rem !important; padding-right: 2rem !important; }
+      #hero-headline { font-size: clamp(3.5rem, 7vw, 5.25rem) !important; line-height: 0.98 !important; }
+      #program-grid { gap: 2rem !important; }
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+      #nav { padding-left: 1rem !important; padding-right: 1rem !important; }
+      #nav-links { gap: 0.75rem !important; }
+      #nav-links a { font-size: 0.72rem !important; }
+      #nav-links .btn-primary { color:white;padding: 0.45rem 0.75rem !important; font-size: 0.72rem !important; }
+    }
+
+    @media (max-width: 767px) {
+      html { scroll-padding-top: 76px; }
+      #nav { min-height: 68px; padding: 0.75rem 1rem !important; }
+      #nav-brand { font-size: 1.15rem !important; max-width: 70%; line-height: 1.1; }
+      #nav-toggle { display: block !important; }
+      #mobile-menu { top: 68px !important; padding: 1rem !important; }
+
+      #hero {
+        min-height: auto !important;
+        padding: 6rem 1rem 4rem !important;
+        gap: 3rem !important;
+      }
+      #hero > div:first-child { width: 100%; }
+      .hero-headline, #hero-headline { font-size: clamp(3rem, 14vw, 4.25rem) !important; line-height: 0.98 !important; letter-spacing: 0.02em !important; }
+      #hero-candidate-name { font-size: 1.5rem !important; }
+      #hero-tagline { font-size: 1rem !important; line-height: 1.55 !important; }
+      #hero-cta { width: 100%; }
+      #hero-cta a { flex: 1 1 100%; text-align: center; }
+      #hero > div:last-child { width: min(100%, 360px); max-width: none !important; }
+      #hero > div:last-child > div:first-child { left: -12px !important; }
+      #hero > div:last-child > div:nth-child(2) { right: -12px !important; }
+      #hero > div:last-child .wanted-card { width: 88% !important; }
+      #poster-label { font-size: 2.2rem !important; }
+
+      section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+      section h2 { font-size: clamp(2rem, 10vw, 3rem) !important; line-height: 1.05 !important; margin-bottom: 2rem !important; }
+      #visi-card { padding: 2rem 1rem !important; }
+      #visi-text { font-size: clamp(1.35rem, 7vw, 2rem) !important; }
+      #misi-grid, #timeline-grid, #program-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+      #misi-grid > div:nth-child(4),
+      #misi-grid > div:nth-child(5) {
+        grid-column: auto !important;
+        width: 100% !important;
+        justify-self: stretch !important;
+      }
+      #prestasi > div > div { flex-direction: column !important; gap: 2rem !important; }
+      #prestasi > div > div > div { width: 100%; min-width: 0 !important; }
+      #misi-grid .wanted-card, #program-grid > .group > div:last-child { padding: 1.5rem !important; }
+      #timeline-grid > div { width: 100%; }
+      #faq-title { padding-bottom: 0.35rem !important; }
+      #faq-list { gap: 1rem !important; }
+      #faq-list summary { padding: 1rem !important; font-size: 1.05rem !important; }
+      #faq-list summary span:first-child { min-width: 0; }
+      #faq-list div > div { padding-left: 1rem !important; padding-right: 1rem !important; font-size: 0.95rem !important; line-height: 1.55 !important; }
+
+      #kontak > div:nth-child(2) { flex-direction: column !important; align-items: stretch !important; }
+      #kontak > div:nth-child(2) > div { min-width: 0 !important; width: 100%; }
+      #cta-card { width: min(100%, 280px) !important; align-self: center; margin: 0 auto; }
+      #cta-headline { font-size: clamp(2.5rem, 13vw, 4rem) !important; }
+      footer { align-items: stretch !important; }
+      #footer-copyright { line-height: 1.5; overflow-wrap: anywhere; }
+      #footer-links { gap: 0.75rem 1rem !important; }
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-background font-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary">
-<!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface border-b-4 border-on-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-<div class="font-headline-md text-headline-md uppercase text-primary">DEWAN TOPI JERAMI</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">ANGGOTA</a>
-<a class="font-label-caps text-label-caps text-primary underline decoration-4 underline-offset-8 uppercase" href="#">MISI</a>
-<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">PRESTASI</a>
-<a class="font-label-caps text-label-caps text-on-background hover:text-primary uppercase" href="#">PROGRAM</a>
-<button class="bg-primary-container text-on-primary font-headline-md text-headline-md px-6 py-2 brutalist-button uppercase">GABUNG BERSAMA KAMI</button>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="min-h-screen pt-32 px-margin-mobile md:px-margin-desktop pb-24 flex flex-col md:flex-row items-center justify-between gap-gutter">
-<div class="w-full md:w-1/2 flex flex-col gap-6 z-10 relative">
-<div class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-4 py-2 uppercase self-start">
-                DICARI
-            </div>
-<h1 class="font-headline-xl text-headline-xl uppercase text-on-background leading-none">
-                PEMIMPIN UNTUK <span class="text-primary-container">ERA BARU</span>
-</h1>
-<h2 class="font-headline-md text-headline-md uppercase text-on-surface-variant">
-                BIMANTARA LUFFY
-            </h2>
-<p class="font-body-lg text-body-lg max-w-xl">
-                Siap merombak OSIS? Gabung bersama kami dan mari berlayar menuju akademi yang lebih seru dan baik. Pengecut dilarang ikut.
-            </p>
-<div class="flex gap-4 mt-4">
-<button class="bg-primary-container text-on-primary font-headline-md text-headline-md px-8 py-3 brutalist-button uppercase">PILIH LUFFY</button>
-<button class="bg-secondary-container text-on-secondary-container font-headline-md text-headline-md px-8 py-3 brutalist-button uppercase">LIHAT PRESTASI</button>
-</div>
-</div>
-<div class="w-full md:w-1/2 mt-12 md:mt-0 relative">
-<div class="wanted-card p-4 rotate-3 transform hover:rotate-0 transition-transform duration-300">
-<div class="bg-primary-container text-on-primary text-center py-2 mb-4 border-4 border-on-background font-headline-lg text-headline-lg uppercase">
-                    DICARI
-                </div>
-<img alt="Bimantara Luffy Wanted Poster" class="w-full h-auto border-4 border-on-background grayscale contrast-125 object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida/AEtjO1V4LVULTQ2PiyUprXIgvmQc1nXVk3YpIP4cgCvZReLkfejW_ajiBxoZ65I4-FAmmmnjYZSuUF40jDuqjW4Y4Hc6kUJsGvRtXBTNc7TQa-1kW5Tq-DI_uQ5zltvraeKhhvZoVjhS-yEHEDLjLiw4SImewm389S6ttGI2stAem5n_bRDfuDxIzwTf0fQpBddZ3fKYingUdWVB51Te_Eda98UxK8H0281bUooQLtO7XKGPvtV4Sc46-v2X">
-<div class="mt-4 flex justify-between items-center font-headline-md text-headline-md">
-<span class="text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined font-variation-settings-'FILL'1">payments</span>
-                        HADIAH
-                    </span>
-<span class="text-on-background">3,000,000,000</span>
-</div>
-</div>
-<!-- Decorative Elements -->
-<div class="absolute -z-10 top-10 -left-10 w-32 h-32 bg-secondary-container border-4 border-on-background rotate-12"></div>
-<div class="absolute -z-10 bottom-10 -right-10 w-24 h-24 bg-primary-fixed-dim border-4 border-on-background -rotate-12 rounded-full"></div>
-</div>
-</section>
-<!-- Latar Belakang (Log Book) -->
 
-<!-- Visi & Misi (Bento Grid) -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-12 text-center text-on-background">
-            RENCANA BESAR KAMI
-        </h2>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-6xl mx-auto">
-<!-- Visi (Hero Card) -->
-<div class="md:col-span-12 wanted-card p-10 bg-primary-container text-on-primary flex flex-col justify-center items-center text-center">
-<span class="material-symbols-outlined text-6xl mb-4">sailing</span>
-<h3 class="font-headline-md text-headline-md uppercase mb-4 opacity-80">VISI</h3>
-<p class="font-headline-lg-mobile md:font-headline-lg uppercase leading-tight">
-                    "MENJADIKAN OSIS SEBAGAI ARMADA TERKUAT UNTUK ASPIRASI SISWA"
-                </p>
-</div>
-<!-- Misi 1 -->
-<div class="md:col-span-4 wanted-card p-8 bg-surface-container flex flex-col hover:-translate-y-2 transition-transform">
-<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">1</div>
-<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">SISTEM ARAH JELAS</h4>
-<p class="font-body-md text-body-md">Meningkatkan transparansi dana dengan sistem pelacakan terbuka. Setiap koin tercatat dengan jelas.</p>
-<div class="mt-auto pt-6">
-<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#TRANSPARANSI</span>
-</div>
-</div>
-<!-- Misi 2 -->
-<div class="md:col-span-4 wanted-card p-8 bg-secondary-container flex flex-col hover:-translate-y-2 transition-transform">
-<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">2</div>
-<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">TANTANGAN MINGGUAN</h4>
-<p class="font-body-md text-body-md text-on-secondary-container">Mengaktifkan kembali ekstrakurikuler sebagai 'Quest' mingguan dengan sistem hadiah.</p>
-<div class="mt-auto pt-6">
-<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#AKSI</span>
-</div>
-</div>
-<!-- Misi 3 -->
-<div class="md:col-span-4 wanted-card p-8 bg-surface-container flex flex-col hover:-translate-y-2 transition-transform">
-<div class="w-16 h-16 bg-on-background text-surface flex items-center justify-center font-headline-md text-headline-md mb-6 border-4 border-on-background">3</div>
-<h4 class="font-headline-md text-headline-md uppercase mb-4 text-on-background">IKATAN PERSAHABATAN</h4>
-<p class="font-body-md text-body-md">Memperkuat solidaritas antar angkatan. Tidak ada siswa yang tertinggal dalam pelayaran ini.</p>
-<div class="mt-auto pt-6">
-<span class="inline-block bg-on-background text-surface font-label-caps text-label-caps px-3 py-1 uppercase">#PERSATUAN</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Program Unggulan -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-high border-t-8 border-on-background">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-16 inline-block bg-primary-container text-on-primary border-4 border-on-background px-8 py-3 shadow-[8px_8px_0px_0px_#1c1c17] rotate-2">
-            PROGRAM UNGGULAN
-        </h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
-<!-- Program 1 -->
-<div class="group relative">
-<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-<div class="relative bg-surface border-4 border-on-background p-8 h-full z-10 flex flex-col">
-<div class="mb-6 flex justify-between items-start">
-<span class="material-symbols-outlined text-5xl text-primary-container">festival</span>
-<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md">S</div>
-</div>
-<h3 class="font-headline-md text-headline-md uppercase mb-4">FESTIVAL SEKOLAH</h3>
-<p class="font-body-md text-body-md mb-6 flex-grow">Pentas seni tahunan berskala masif dengan tema petualangan interaktif. Bukan sekadar pensi biasa.</p>
-</div>
-</div>
-<!-- Program 2 -->
-<div class="group relative">
-<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-<div class="relative bg-secondary-container border-4 border-on-background p-8 h-full z-10 flex flex-col">
-<div class="mb-6 flex justify-between items-start">
-<span class="material-symbols-outlined text-5xl text-on-secondary-container">hub</span>
-<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md bg-surface">A</div>
-</div>
-<h3 class="font-headline-md text-headline-md uppercase mb-4">PUSAT ASPIRASI SISWA</h3>
-<p class="font-body-md text-body-md mb-6 flex-grow text-on-secondary-container">Platform digital terenkripsi untuk aspirasi, ide gila, dan pengaduan. Jalur langsung ke kapten.</p>
-</div>
-</div>
-<!-- Program 3 -->
-<div class="group relative">
-<div class="absolute inset-0 bg-on-background translate-x-3 translate-y-3 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-<div class="relative bg-surface border-4 border-on-background p-8 h-full z-10 flex flex-col">
-<div class="mb-6 flex justify-between items-start">
-<span class="material-symbols-outlined text-5xl text-primary-container">military_tech</span>
-<div class="w-12 h-12 rounded-full border-4 border-on-background flex items-center justify-center font-headline-md text-headline-md">S</div>
-</div>
-<h3 class="font-headline-md text-headline-md uppercase mb-4">PENGHARGAAN SISWA BERPRESTASI</h3>
-<p class="font-body-md text-body-md mb-6 flex-grow">Penghargaan bulanan untuk siswa yang mencapai 'bounty' (prestasi) di bidang akademik maupun non-akademik.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ Accordion -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
-<div class="max-w-4xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-12 text-on-background border-b-8 border-primary-container inline-block pb-2">
-                TANYA JAWAB (FAQ)
-            </h2>
-<div class="space-y-6">
-<!-- FAQ Item 1 -->
-<div class="border-4 border-on-background bg-surface-container-low shadow-[4px_4px_0px_0px_#1c1c17]">
-<details class="group">
-<summary class="flex justify-between items-center font-headline-md text-headline-md p-6 cursor-pointer list-none uppercase">
-<span class="">Apakah 'Festival Sekolah' mungkin dilakukan?</span>
-<span class="transition group-open:rotate-180">
-<span class="material-symbols-outlined text-4xl">arrow_drop_down</span>
-</span>
-</summary>
-<div class="p-6 pt-0 font-body-lg text-body-lg border-t-4 border-on-background bg-surface">
-<p class="">Tentu saja. Kami telah menyusun realokasi anggaran menggunakan sistem Arah Jelas. Ini hanya membutuhkan pengalihan dana dari acara seremonial yang tidak perlu ke inisiatif aktif siswa.</p>
-</div>
-</details>
-</div>
-<!-- FAQ Item 2 -->
-<div class="border-4 border-on-background bg-surface-container-low shadow-[4px_4px_0px_0px_#1c1c17]">
-<details class="group">
-<summary class="flex justify-between items-center font-headline-md text-headline-md p-6 cursor-pointer list-none uppercase">
-<span class="">Apa yang membuatmu berbeda dari ketua OSIS sebelumnya?</span>
-<span class="transition group-open:rotate-180">
-<span class="material-symbols-outlined text-4xl">arrow_drop_down</span>
-</span>
-</summary>
-<div class="p-6 pt-0 font-body-lg text-body-lg border-t-4 border-on-background bg-surface">
-<p class="">Saya tidak peduli dengan politik; saya peduli dengan anggota. Kurangi bicara di rapat, perbanyak aksi di lapangan.</p>
-</div>
-</details>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact / Call to Action -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-on-background text-surface relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none">
-<img alt="OSIS Grand Line Logo Ghost" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WDAta3o3TaxPbMO8AoPq1I1haHp3mwXhJPR-NzVGkT_uGCVKtVq6X5tMrXbhRqbwdL4wnFHLxHk0lZHEQJccl3RTCbhw2oEzjWJtN7WHCX8u6JFN-LlKvz5H6Ya7K8pdwBSmkVrsgjRCg67_G-e_5_bVBENZpi0ckBosi1XwfBl6eLZJ8uR1HBH_jpHY7rFdPZGV_FlVtxp22ZMeC6aPf8_FHXZxixI4qiBqkx3vI3Dx4sva_V6GIG">
-</div>
-<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
-<div class="md:w-1/2">
-<h2 class="font-headline-xl text-headline-xl uppercase text-primary mb-6">AYO BERGABUNG SEKARANG</h2>
-<p class="font-body-lg text-body-lg mb-8 text-surface-variant max-w-md">
-                    Kapal akan segera meninggalkan pelabuhan. Apakah kamu ikut naik atau tertinggal? Hubungi kami lewat Den Den Mushi.
-                </p>
-<div class="flex flex-wrap gap-4">
-<a class="flex items-center gap-2 bg-surface text-on-background font-label-caps text-label-caps px-6 py-3 border-4 border-surface shadow-[4px_4px_0px_0px_#be0000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#be0000] transition-all uppercase" href="#">
-<span class="material-symbols-outlined">photo_camera</span>
-                        INSTAGRAM
-                    </a>
-<a class="flex items-center gap-2 bg-surface text-on-background font-label-caps text-label-caps px-6 py-3 border-4 border-surface shadow-[4px_4px_0px_0px_#be0000] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#be0000] transition-all uppercase" href="#">
-<span class="material-symbols-outlined">forum</span>
-                        WHATSAPP
-                    </a>
-</div>
-</div>
-<div class="md:w-1/3 bg-surface p-8 border-8 border-primary shadow-[12px_12px_0px_0px_#fed65b] transform rotate-3">
-<img alt="OSIS Grand Line Logo" class="w-full h-auto mb-6" src="https://lh3.googleusercontent.com/aida/AEtjO1WDAta3o3TaxPbMO8AoPq1I1haHp3mwXhJPR-NzVGkT_uGCVKtVq6X5tMrXbhRqbwdL4wnFHLxHk0lZHEQJccl3RTCbhw2oEzjWJtN7WHCX8u6JFN-LlKvz5H6Ya7K8pdwBSmkVrsgjRCg67_G-e_5_bVBENZpi0ckBosi1XwfBl6eLZJ8uR1HBH_jpHY7rFdPZGV_FlVtxp22ZMeC6aPf8_FHXZxixI4qiBqkx3vI3Dx4sva_V6GIG">
-<button class="w-full bg-primary-container text-on-primary font-headline-md text-headline-md py-4 border-4 border-on-background hover:bg-on-background hover:text-surface transition-colors uppercase">
-                    GABUNG BERSAMA KAMI
-                </button>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-gutter bg-on-background border-t-8 border-primary">
-<div>
-<div class="font-headline-lg text-headline-lg-mobile text-primary uppercase mb-4">DEWAN TOPI JERAMI</div>
-<p class="font-body-md text-body-md text-surface uppercase">© 2024 DEWAN AKADEMI GRAND LINE. TIDAK ADA HADIAH UNTUK PENGECUT.</p>
-</div>
-<div class="flex flex-wrap gap-6">
-<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Arah Jelas</a>
-<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Kode Laut</a>
-<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Den Den Mushi</a>
-<a class="font-label-caps text-label-caps text-surface-variant hover:text-primary hover:skew-x-2 transition-transform cursor-pointer uppercase" href="#">Pasar Gelap</a>
-</div>
-</footer>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════ -->
+  <nav id="nav" style="
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 4rem;
+    background-color: var(--color-parchment);
+    border-bottom: 4px solid var(--color-ink);
+    box-shadow: 0 4px 0 0 var(--color-ink);
+  ">
+    <!-- Brand -->
+    <a id="nav-brand" href="#" style="
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: var(--color-haki-red);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    "></a>
+
+    <!-- Links (desktop) -->
+    <div id="nav-links" style="display: flex; gap: 2rem; align-items: center;"></div>
+
+    <!-- Mobile menu toggle -->
+    <button id="nav-toggle" onclick="toggleMobileMenu()" style="
+      display: none;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      background: none;
+      border: 3px solid var(--color-ink);
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+      text-transform: uppercase;
+    ">MENU</button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" style="
+    display: none;
+    position: fixed; top: 73px; left: 0; right: 0; z-index: 40;
+    background-color: var(--color-parchment);
+    border-bottom: 4px solid var(--color-ink);
+    padding: 1.5rem 1rem;
+    flex-direction: column; gap: 1.5rem;
+  ">
+    <div id="mobile-links"></div>
+    <div id="mobile-cta"></div>
+  </div>
 
 
-</body></html>
+  <!-- ═══════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════════ -->
+  <section id="hero" style="
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-gutter);
+  ">
+    <!-- Left: Copy -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 1.5rem; position: relative; z-index: 1;">
+      <span id="hero-eyebrow" class="chip" style="align-self: flex-start;"></span>
+
+      <h1 id="hero-headline" class="font-display hero-headline" style="
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-ink);
+        text-shadow: 2px 2px 0 #000;
+        max-width: 600px;
+      ">
+        <span id="hero-h1-part1"></span>
+        <span id="hero-h1-part2" style="color: var(--color-haki-red-vivid);"></span>
+      </h1>
+
+      <h2 id="hero-candidate-name" class="font-display" style="
+        font-size: 2rem;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: var(--color-ink-muted);
+        letter-spacing: 0.02em;
+      "></h2>
+
+      <p id="hero-tagline" style="
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 500;
+        max-width: 520px;
+        color: var(--color-ink);
+      "></p>
+
+      <div id="hero-cta" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;"></div>
+    </div>
+
+    <!-- Right: Wanted Poster -->
+    <div style="flex: 1; display: flex; justify-content: center; position: relative; max-width: 420px;">
+      <!-- Decorative bg squares -->
+      <div style="
+        position: absolute; z-index: 0;
+        top: 40px; left: -40px;
+        width: 112px; height: 112px;
+        background-color: var(--color-grand-gold);
+        border: 4px solid var(--color-ink);
+        transform: rotate(12deg);
+      "></div>
+      <div style="
+        position: absolute; z-index: 0;
+        bottom: 40px; right: -40px;
+        width: 80px; height: 80px;
+        background-color: var(--color-haki-light);
+        border: 4px solid var(--color-ink);
+        border-radius: 50%;
+        transform: rotate(-12deg);
+      "></div>
+
+      <!-- Poster card -->
+      <div class="wanted-card" style="
+        padding: 1rem;
+        transform: rotate(3deg);
+        transition: transform 0.3s ease;
+        position: relative; z-index: 1;
+        width: 70%;
+        ;
+      " onmouseover="this.style.transform='rotate(0deg)'" onmouseout="this.style.transform='rotate(3deg)'">
+        <!-- Poster header -->
+        <div id="poster-label" class="font-display" style="
+          background-color: var(--color-haki-red-vivid);
+          color: #fff;
+          text-align: center;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+          border: 4px solid var(--color-ink);
+          font-size: 3rem;
+          line-height: 1;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+        "></div>
+
+        <!-- Photo area -->
+        <div id="poster-photo-wrap" class="img-placeholder" style="overflow: hidden;">
+          <img id="poster-photo" src="" alt="" style="
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(1) contrast(1.25);
+          " />
+          <span id="poster-photo-fallback" style="position: absolute;">[ FOTO KANDIDAT ]</span>
+        </div>
+
+        <!-- Reward row -->
+        <div style="
+          margin-top: 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+          <span id="poster-reward-label" class="font-display" style="
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color: var(--color-ink-muted);
+            display: flex; align-items: center; gap: 0.5rem;
+          ">
+            <span class="material-symbols-outlined">payments</span>
+          </span>
+          <span id="poster-reward-value" class="font-display" style="
+            font-size: 1.25rem;
+            color: var(--color-ink);
+          "></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       VISI & MISI
+  ════════════════════════════════════════════════════════ -->
+  <section id="misi" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-parchment);
+  ">
+    <h2 id="misi-title" class="font-display" style="
+      font-size: 3rem;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: var(--color-ink);
+    "></h2>
+
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-gutter);">
+
+      <!-- Visi hero card -->
+      <div id="visi-card" class="wanted-card" style="
+        padding: 3rem;
+        background-color: var(--color-haki-red-vivid);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      ">
+        <span class="material-symbols-outlined" style="font-size: 3.5rem; margin-bottom: 1rem;">sailing</span>
+        <p style="font-family: var(--font-mono); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; opacity: 0.8; margin-bottom: 1rem;">VISI</p>
+        <p id="visi-text" class="font-display" style="
+          font-size: clamp(1.2rem, 2vw, 2rem);
+          line-height: 1.1;
+          text-transform: uppercase;
+        "></p>
+      </div>
+
+      <!-- Misi cards grid -->
+      <div id="misi-grid" style="
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--spacing-gutter);
+        align-items: stretch;
+      "></div>
+
+    </div>
+    <br>
+    <br>
+    <div id="countdown-wrap">
+      <div id="countdown-label">Jangan lewatkan — Pencoblosan dimulai</div>
+      <div id="countdown-grid">
+        <div class="countdown-box">
+          <div id="countdown-days" class="countdown-number">00</div>
+          <div class="countdown-text">Hari</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-hours" class="countdown-number">00</div>
+          <div class="countdown-text">Jam</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-minutes" class="countdown-number">00</div>
+          <div class="countdown-text">Menit</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-seconds" class="countdown-number">00</div>
+          <div class="countdown-text">Detik</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROFIL KANDIDAT
+  ════════════════════════════════════════════════════════ -->
+  <section id="prestasi" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-parchment);
+  ">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 id="kandidat-title" class="font-display" style="
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--color-ink);
+      "></h2>
+
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 3rem; align-items: flex-start;">
+        <!-- Bio -->
+        <div style="flex: 1; min-width: 260px;">
+          <p id="kandidat-bio" style="
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            color: var(--color-ink);
+          "></p>
+
+        </div>
+        <div style="flex: 1; min-width: 260px;">
+          <p id="kandidat-bio2" style="
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            color: var(--color-ink);
+            text-align: end;
+            margin-top: 1rem;
+          "></p>
+
+        </div>
+
+        <!-- Achievement cards -->
+        <!-- <div id="prestasi-list" style="
+          flex: 1; min-width: 260px;
+          display: flex; flex-direction: column; gap: 1rem;
+        "></div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       TIMELINE
+  ════════════════════════════════════════════════════════ -->
+  <section id="timeline" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-parchment-mid);
+    overflow: hidden;
+  ">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 id="timeline-title" class="font-display" style="
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 4rem;
+        color: var(--color-ink);
+      "></h2>
+
+      <!-- Timeline track -->
+      <div style="position: relative;">
+        <div id="timeline-line" style="
+          position: absolute;
+          top: 2rem; left: 0; right: 0;
+          height: 8px;
+          background-color: var(--color-ink);
+        "></div>
+
+        <div id="timeline-grid" style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: var(--spacing-gutter);
+          position: relative;
+          z-index: 1;
+        "></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROGRAM UNGGULAN
+  ════════════════════════════════════════════════════════ -->
+  <section id="program" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-parchment-dark);
+  ">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 id="program-title" class="font-display" style="
+        display: inline-block;
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: var(--color-haki-red-vivid);
+        border: 4px solid var(--color-ink);
+        box-shadow: 8px 8px 0 0 var(--color-ink);
+        padding: 0.75rem 2rem;
+        margin-bottom: 4rem;
+        transform: rotate(2deg);
+      "></h2>
+
+      <div id="program-grid" style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+      "></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FAQ
+  ════════════════════════════════════════════════════════ -->
+  <section id="faq" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-parchment);
+  ">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 id="faq-title" class="font-display" style="
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--color-ink);
+        border-bottom: 8px solid var(--color-haki-red-vivid);
+        display: inline-block;
+        padding-bottom: 0.5rem;
+        margin-bottom: 3rem;
+      "></h2>
+
+      <div id="faq-list" style="display: flex; flex-direction: column; gap: 1.5rem;"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       KONTAK / CTA
+  ════════════════════════════════════════════════════════ -->
+  <section id="kontak" class="section-divider" style="
+    padding: 5rem 4rem;
+    background-color: var(--color-ink);
+    color: var(--color-parchment);
+    position: relative;
+    overflow: hidden;
+  ">
+    <!-- <div style="
+      position: absolute; top: 0; right: 0;
+      width: 280px; height: 280px;
+      opacity: 0.08;
+      pointer-events: none;
+    ">
+      <span class="material-symbols-outlined" style="font-size: 280px; color: #fff;">anchor</span>
+    </div> -->
+
+    <div style="
+      max-width: 1100px; margin: 0 auto;
+      display: flex; flex-direction: row; flex-wrap: wrap;
+      align-items: center; justify-content: space-between;
+      gap: 1.5rem; padding: 2rem 1rem;
+      position: relative; z-index: 1;
+    ">
+      <!-- Left: text + social -->
+      <div style="flex: 1; min-width: 260px;">
+        <h2 id="cta-headline" class="font-display" style="
+          font-size: clamp(2.5rem, 5vw, 5rem);
+          line-height: 0.95;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: var(--color-haki-red-vivid);
+          margin-bottom: 1.5rem;
+          text-shadow: 4px 4px 0 #000;
+        "></h2>
+        <p id="cta-subtext" style="
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          font-weight: 500;
+          color: var(--color-parchment-dark);
+          max-width: 400px;
+          margin-bottom: 2rem;
+        "></p>
+        <div id="cta-social" style="display: flex; flex-wrap: wrap; gap: 1rem;"></div>
+      </div>
+
+      <!-- Right: CTA card -->
+      <div id="cta-card" style="
+        flex: 0 0 auto;
+        width: 350px;
+        background-color: var(--color-parchment);
+        padding: 2rem;
+        border: 8px solid var(--color-haki-red);
+        box-shadow: 12px 12px 0 0 var(--color-grand-gold);
+        transform: rotate(3deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      ">
+        <!-- Logo area -->
+        <div id="cta-logo-wrap" class="logo-placeholder">
+          <img id="cta-logo" src="" alt="" style="width:100%;height:100%;object-fit:cover;" />
+          <span id="cta-logo-fallback">[ LOGO ]</span>
+        </div>
+
+        <a id="cta-card-btn" href="#" class="btn-primary" style="width: 100%; text-align: center;"></a>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer style="
+  width: 100%;
+    padding: 3rem 4rem;
+    background-color: var(--color-ink);
+    border-top: 8px solid var(--color-haki-red-vivid);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-center;
+    align-items: flex-center;
+    gap: var(--spacing-gutter);
+  ">
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+      <p id="footer-brand" class="font-display" style="
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--color-haki-red-vivid);
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.02em;
+      "></p>
+      <p id="footer-copyright" style="
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: var(--color-parchment-dark);
+        font-family: var(--font-mono);
+      "></p>
+    </div>
+    <!-- <nav id="footer-links" style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;"></nav> -->
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       DATA + RENDERER
+  ════════════════════════════════════════════════════════ -->
+  <script src="data.js"></script>
+  <script>
+  /* ──────────────────────────────────────────────────────────
+     Helpers
+  ────────────────────────────────────────────────────────── */
+  function el(id)   { return document.getElementById(id); }
+  function text(id, val) { const e = el(id); if (e) e.textContent = val; }
+
+  // Misi card background colors
+  const misiVariants = {
+    surface:   { bg: 'var(--color-parchment-mid)',  textTag: true },
+    secondary: { bg: 'var(--color-grand-gold)',     textTag: true },
+    primary:   { bg: 'var(--color-haki-red-vivid)', textTag: false, light: true },
+  };
+
+  // Prestasi card colors
+  const prestasiVariants = {
+    secondary: { bg: 'var(--color-grand-gold)',     color: 'var(--color-gold-text)' },
+    surface:   { bg: 'var(--color-parchment-mid)',  color: 'var(--color-ink)' },
+    primary:   { bg: 'var(--color-haki-red-vivid)', color: '#fff' },
+  };
+
+  // Timeline year badge colors
+  const timelineVariants = {
+    secondary: { bg: 'var(--color-grand-gold)',     color: 'var(--color-gold-text)' },
+    primary:   { bg: 'var(--color-haki-red-vivid)', color: '#fff' },
+  };
+
+  /* ──────────────────────────────────────────────────────────
+     Image placeholder logic
+  ────────────────────────────────────────────────────────── */
+  function setupImagePlaceholder(imgId, fallbackId, src, alt) {
+    const img = el(imgId);
+    const fallback = el(fallbackId);
+    if (!img || !fallback) return;
+    if (src && src.trim() !== '') {
+      img.src = src;
+      img.alt = alt || '';
+      img.style.display = 'block';
+      fallback.style.display = 'none';
+    } else {
+      img.style.display = 'none';
+      fallback.style.display = 'block';
+    }
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     NAV
+  ────────────────────────────────────────────────────────── */
+  function renderNav() {
+    const d = SITE_DATA.nav;
+    text('nav-brand', d.brandName);
+    el('nav-brand').href = '#hero';
+
+    const linksEl  = el('nav-links');
+    const mobileEl = el('mobile-links');
+    const mobileCta = el('mobile-cta');
+
+    d.links.forEach(link => {
+      const a = document.createElement('a');
+      a.href = link.href;
+      a.textContent = link.label;
+      a.style.cssText = `
+        display: inline-block;
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-ink);
+        text-decoration: none;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 6px;
+        transition: color 0.1s, transform 0.1s;
+      `;
+      a.onmouseover = () => { a.style.color = 'var(--color-haki-red)'; };
+      a.onmouseout  = () => { if (!a.classList.contains('nav-link-active')) a.style.color = 'var(--color-ink)'; };
+      a.addEventListener('click', closeMobileMenu);
+      linksEl.appendChild(a);
+      const mobileLink = a.cloneNode(true);
+      mobileLink.addEventListener('click', closeMobileMenu);
+      mobileEl.appendChild(mobileLink);
+    });
+
+    // Desktop CTA
+    const ctaBtn = document.createElement('a');
+    ctaBtn.href = d.ctaHref;
+    ctaBtn.textContent = d.ctaLabel;
+    ctaBtn.className = 'btn-primary';
+    ctaBtn.style.fontSize = '0.875rem';
+    ctaBtn.style.padding = '0.5rem 1.25rem';
+    linksEl.appendChild(ctaBtn);
+
+    // Mobile CTA
+    const ctaMobile = ctaBtn.cloneNode(true);
+    ctaMobile.addEventListener('click', closeMobileMenu);
+    mobileCta.appendChild(ctaMobile);
+
+    updateActiveNavLink('#hero');
+  }
+
+  function updateActiveNavLink(activeHref) {
+    document.querySelectorAll('#nav-links a, #mobile-links a').forEach(link => {
+      const isActive = link.getAttribute('href') === activeHref;
+      link.classList.toggle('nav-link-active', isActive);
+      link.style.color = isActive ? 'var(--color-haki-red)' : 'var(--color-ink)';
+    });
+  }
+
+  function closeMobileMenu() {
+    el('mobile-menu').style.display = 'none';
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     HERO
+  ────────────────────────────────────────────────────────── */
+  function startTypingLoop(elementId, textValue, delay = 90, pause = 900) {
+    const target = el(elementId);
+    if (!target) return;
+
+    let i = 0;
+    let deleting = false;
+
+    function tick() {
+      if (!deleting) {
+        target.textContent = textValue.slice(0, i + 1);
+        i += 1;
+
+        if (i >= textValue.length) {
+          deleting = true;
+          setTimeout(tick, pause);
+          return;
+        }
+      } else {
+        target.textContent = textValue.slice(0, i - 1);
+        i -= 1;
+
+        if (i <= 0) {
+          deleting = false;
+          setTimeout(tick, 180);
+          return;
+        }
+      }
+
+      setTimeout(tick, deleting ? delay / 2 : delay);
+    }
+
+    tick();
+  }
+
+  function renderHero() {
+    const d = SITE_DATA.hero;
+
+    text('hero-eyebrow',        d.eyebrow);
+    text('hero-h1-part1',       d.headlinePart1 + ' ');
+    text('hero-h1-part2',       d.headlinePart2);
+    text('hero-candidate-name', '');
+    text('hero-tagline',        d.tagline);
+
+    startTypingLoop('hero-candidate-name', d.candidateName, 90, 900);
+
+    // CTA buttons
+    const ctaWrap = el('hero-cta');
+    const btnP = document.createElement('a');
+    btnP.href = d.cta.primary.href;
+    btnP.textContent = d.cta.primary.label;
+    btnP.className = 'btn-primary';
+    ctaWrap.appendChild(btnP);
+
+    const btnS = document.createElement('a');
+    btnS.href = d.cta.secondary.href;
+    btnS.textContent = d.cta.secondary.label;
+    btnS.className = 'btn-secondary';
+    ctaWrap.appendChild(btnS);
+
+    // Poster
+    const p = d.wantedPoster;
+    text('poster-label',        p.label);
+    text('poster-reward-label', p.rewardLabel);
+
+    const rewardLabelEl = el('poster-reward-label');
+    rewardLabelEl.innerHTML = `<span class="material-symbols-outlined">payments</span> ${p.rewardLabel}`;
+
+    text('poster-reward-value', p.rewardValue);
+
+    setupImagePlaceholder('poster-photo', 'poster-photo-fallback', p.imageSrc, p.imageAlt);
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     VISI & MISI
+  ────────────────────────────────────────────────────────── */
+  function renderMisi() {
+    const d = SITE_DATA.visiMisi;
+    text('misi-title', d.sectionTitle);
+    text('visi-text',  d.visi);
+
+    const grid = el('misi-grid');
+    d.misi.forEach(m => {
+      const v = misiVariants[m.variant] || misiVariants.surface;
+      const card = document.createElement('div');
+      card.className = 'wanted-card';
+      card.style.cssText = `
+        padding: 2rem;
+        background-color: ${v.bg};
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.15s ease;
+        ${v.light ? 'color: #fff;' : 'color: var(--color-ink);'}
+      `;
+      card.onmouseover = () => card.style.transform = 'translateY(-6px)';
+      card.onmouseout  = () => card.style.transform = 'translateY(0)';
+
+      card.innerHTML = `
+        <div style="
+          width: 56px; height: 56px;
+          background-color: var(--color-ink);
+          color: var(--color-parchment);
+          display: flex; align-items: center; justify-content: center;
+          font-family: var(--font-display);
+          font-size: 1.5rem;
+          border: 4px solid var(--color-ink);
+          margin-bottom: 1.5rem;
+        ">${m.nomor}</div>
+        <h4 style="
+          font-family: var(--font-display);
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+          line-height: 1.1;
+        ">${m.judul}</h4>
+        <p style="font-size: 1rem; line-height: 1.6; flex: 1;">${m.deskripsi}</p>
+        <div style="margin-top: 1.5rem;">
+          <span class="chip">${m.tag}</span>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     KANDIDAT & PRESTASI
+  ────────────────────────────────────────────────────────── */
+  function renderKandidat() {
+    const d = SITE_DATA.kandidat;
+    text('kandidat-title', d.sectionTitle);
+    text('kandidat-bio',   d.bio);
+    text('kandidat-bio2',   d.bio2);
+
+  //   const list = el('prestasi-list');
+  //   d.prestasi.forEach(p => {
+  //     const v = prestasiVariants[p.variant] || prestasiVariants.surface;
+  //     const card = document.createElement('div');
+  //     card.className = 'wanted-card';
+  //     card.style.cssText = `
+  //       padding: 1.25rem 1.5rem;
+  //       background-color: ${v.bg};
+  //       color: ${v.color};
+  //       display: flex;
+  //       align-items: center;
+  //       gap: 1rem;
+  //       transition: transform 0.15s ease;
+  //     `;
+  //     card.onmouseover = () => card.style.transform = 'translateY(-4px)';
+  //     card.onmouseout  = () => card.style.transform = 'translateY(0)';
+
+  //     card.innerHTML = `
+  //       <span class="material-symbols-outlined" style="font-size: 2rem; flex-shrink: 0;">${p.icon}</span>
+  //       <span style="
+  //         font-family: var(--font-display);
+  //         font-size: 1.1rem;
+  //         text-transform: uppercase;
+  //         line-height: 1.2;
+  //       ">${p.label}</span>
+  //     `;
+  //     list.appendChild(card);
+  //   });
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     TIMELINE
+  ────────────────────────────────────────────────────────── */
+  function renderTimeline() {
+    const d = SITE_DATA.timeline;
+    text('timeline-title', d.sectionTitle);
+
+    const grid = el('timeline-grid');
+    d.items.forEach(item => {
+      const v = timelineVariants[item.variant] || timelineVariants.secondary;
+
+      const col = document.createElement('div');
+      col.style.cssText = 'display: flex; flex-direction: column; align-items: center; text-align: center;';
+
+      col.innerHTML = `
+        <!-- Year badge -->
+        <div style="
+          width: 124px; height: 64px;
+          background-color: ${v.bg};
+          color: ${v.color};
+          border: 4px solid var(--color-ink);
+          box-shadow: 4px 4px 0 0 var(--color-ink);
+          display: flex; align-items: center; justify-content: center;
+          font-family: var(--font-display);
+          font-size: 1.25rem;
+          margin-bottom: 1.5rem;
+          transform: ${item.rotate || 'rotate(2deg)'};
+        ">${item.tahun}</div>
+        <!-- Content card -->
+        <div class="card" style="
+          background-color: var(--color-parchment);
+          padding: 1.5rem;
+          box-shadow: 8px 8px 0 0 var(--color-ink);
+          transition: transform 0.15s ease;
+          width: 100%;
+        "
+          onmouseover="this.style.transform='translateY(-6px)'"
+          onmouseout="this.style.transform='translateY(0)'"
+        >
+          <h3 style="
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+          ">${item.judul}</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--color-ink-muted);">${item.deskripsi}</p>
+        </div>
+      `;
+      grid.appendChild(col);
+    });
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     PROGRAM UNGGULAN
+  ────────────────────────────────────────────────────────── */
+  function renderProgram() {
+    const d = SITE_DATA.program;
+    text('program-title', d.sectionTitle);
+
+    const grid = el('program-grid');
+    const programBg = {
+      surface:   'var(--color-parchment)',
+      secondary: 'var(--color-grand-gold)',
+      primary:   'var(--color-haki-red-vivid)',
+    };
+
+    d.items.forEach(item => {
+      const bg = programBg[item.variant] || programBg.surface;
+      const isLight = item.variant === 'primary';
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'group';
+      wrapper.style.cssText = 'position: relative; height: 100%;';
+
+      wrapper.innerHTML = `
+        <div class="shadow-lift-bg"></div>
+        <div style="
+          position: relative;
+          background-color: ${bg};
+          border: 4px solid var(--color-ink);
+          padding: 2rem 1.75rem 2rem;
+          display: flex;
+          flex-direction: column;
+          z-index: 1;
+          min-height: 440px;
+          ${isLight ? 'color: #fff;' : 'color: var(--color-ink);'}
+        ">
+          <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+          ">
+            <span class="material-symbols-outlined" style="
+              font-size: 3.2rem;
+              width: 76px;
+              height: 76px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              color: ${isLight ? '#fff' : '#fff'};
+              background-color: ${isLight ? 'rgba(255,255,255,0.12)' : 'var(--color-haki-red-vivid)'};
+              border: 4px solid var(--color-ink);
+              box-shadow: 4px 4px 0 0 var(--color-ink);
+              transform: rotate(-2deg);
+            ">${item.icon}</span>
+          </div>
+
+          <h3 style="
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 2vw, 2.8rem);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 0.96;
+            margin: 0 0 1.4rem 0;
+            word-break: break-word;
+          ">${item.judul}</h3>
+
+          <p style="
+            font-size: 1.05rem;
+            line-height: 1.5;
+            margin: 0;
+            flex: 1;
+            max-width: 28ch;
+          ">${item.deskripsi}</p>
+        </div>
+      `;
+      grid.appendChild(wrapper);
+    });
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     FAQ
+  ────────────────────────────────────────────────────────── */
+  function renderFaq() {
+    const d = SITE_DATA.faq;
+    text('faq-title', d.sectionTitle);
+
+    const list = el('faq-list');
+    d.items.forEach(item => {
+      const wrap = document.createElement('div');
+      wrap.className = 'card';
+      wrap.style.cssText = `
+        background-color: var(--color-parchment-mid);
+        box-shadow: 4px 4px 0 0 var(--color-ink);
+      `;
+
+      const details = document.createElement('details');
+
+      const summary = document.createElement('summary');
+      summary.style.cssText = `
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        cursor: pointer;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        gap: 1rem;
+        user-select: none;
+      `;
+      summary.innerHTML = `
+        <span>${item.pertanyaan}</span>
+        <span class="material-symbols-outlined faq-arrow" style="font-size: 2rem; flex-shrink: 0;">arrow_drop_down</span>
+      `;
+
+      const body = document.createElement('div');
+      body.style.cssText = `
+        padding: 0 1.5rem 1.5rem;
+        border-top: 4px solid var(--color-ink);
+        margin-top: 0;
+        padding-top: 1.5rem;
+        background-color: var(--color-parchment);
+        font-size: 1.05rem;
+        line-height: 1.75rem;
+        font-weight: 500;
+      `;
+      body.textContent = item.jawaban;
+
+      details.appendChild(summary);
+      details.appendChild(body);
+      wrap.appendChild(details);
+      list.appendChild(wrap);
+    });
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     KONTAK / CTA
+  ────────────────────────────────────────────────────────── */
+  function renderKontak() {
+    const d = SITE_DATA.kontak;
+    text('cta-headline', d.headline);
+    text('cta-subtext',  d.subtext);
+
+    const socialWrap = el('cta-social');
+    d.socialLinks.forEach(s => {
+      const a = document.createElement('a');
+      a.href = s.href;
+      a.className = 'btn-ghost';
+      a.innerHTML = `<span class="material-symbols-outlined">${s.icon}</span> ${s.label}`;
+      socialWrap.appendChild(a);
+    });
+
+    // CTA card
+    const card = d.ctaCard;
+    setupImagePlaceholder('cta-logo', 'cta-logo-fallback', card.logoSrc, card.logoAlt);
+
+    const ctaCardBtn = el('cta-card-btn');
+    ctaCardBtn.href = card.ctaHref;
+    ctaCardBtn.textContent = "Ayo jadi pilih #3 - Jadilh Timses 03";
+    ctaCardBtn.style.width = '100%';
+    ctaCardBtn.style.textAlign = 'center';
+  }
+
+  function startCountdown(targetDateString) {
+    const targetDate = new Date(targetDateString);
+    const daysEl = el('countdown-days');
+    const hoursEl = el('countdown-hours');
+    const minutesEl = el('countdown-minutes');
+    const secondsEl = el('countdown-seconds');
+
+    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+    function update() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        daysEl.textContent = '00';
+        hoursEl.textContent = '00';
+        minutesEl.textContent = '00';
+        secondsEl.textContent = '00';
+        return;
+      }
+
+      const totalSeconds = Math.floor(diff / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      daysEl.textContent = String(days).padStart(2, '0');
+      hoursEl.textContent = String(hours).padStart(2, '0');
+      minutesEl.textContent = String(minutes).padStart(2, '0');
+      secondsEl.textContent = String(seconds).padStart(2, '0');
+    }
+
+    update();
+    setInterval(update, 1000);
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     FOOTER
+  ────────────────────────────────────────────────────────── */
+  function renderFooter() {
+    const d = SITE_DATA.footer;
+    text('footer-brand',     d.brandName);
+    text('footer-copyright', d.copyright);
+
+    const linksEl = el('footer-links');
+    if (linksEl && Array.isArray(d.links)) {
+      d.links.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.textContent = link.label;
+        a.style.cssText = `
+          font-family: var(--font-mono);
+          font-size: 0.875rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: var(--color-parchment-dark);
+          text-decoration: none;
+          transition: color 0.1s, transform 0.1s;
+        `;
+        a.onmouseover = () => { a.style.color = 'var(--color-haki-red-vivid)'; a.style.transform = 'skewX(-3deg)'; };
+        a.onmouseout  = () => { a.style.color = 'var(--color-parchment-dark)'; a.style.transform = 'skewX(0)'; };
+        linksEl.appendChild(a);
+      });
+    }
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     MOBILE RESPONSIVENESS
+  ────────────────────────────────────────────────────────── */
+  function applyResponsive() {
+    const isMobile = window.innerWidth < 768;
+
+    // Nav
+    el('nav').style.padding = isMobile ? '1rem' : '1rem 4rem';
+    el('nav-links').style.display = isMobile ? 'none' : 'flex';
+    el('nav-toggle').style.display = isMobile ? 'block' : 'none';
+    if (!isMobile) closeMobileMenu();
+
+    // Hero
+    const heroSection = el('hero');
+    heroSection.style.flexDirection = isMobile ? 'column' : 'row';
+    heroSection.style.paddingLeft   = isMobile ? '1rem' : '4rem';
+    heroSection.style.paddingRight  = isMobile ? '1rem' : '4rem';
+    heroSection.style.paddingTop    = isMobile ? '5rem' : '7rem';
+
+    // Other sections
+    ['misi','prestasi','timeline','program','faq','kontak'].forEach(id => {
+      const s = el(id);
+      if (s) {
+        s.style.paddingLeft  = isMobile ? '1rem' : '4rem';
+        s.style.paddingRight = isMobile ? '1rem' : '4rem';
+      }
+    });
+
+    // Footer
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.style.padding = isMobile ? '2rem 1rem' : '3rem 4rem';
+      footer.style.flexDirection = isMobile ? 'column' : 'row';
+    }
+
+    // Timeline line (only on desktop)
+    const tLine = el('timeline-line');
+    if (tLine) tLine.style.display = isMobile ? 'none' : 'block';
+  }
+
+  function toggleMobileMenu() {
+    const menu = el('mobile-menu');
+    const open = menu.style.display === 'flex';
+    menu.style.display = open ? 'none' : 'flex';
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     INIT
+  ────────────────────────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', () => {
+    renderNav();
+    renderHero();
+    renderMisi();
+    renderKandidat();
+    renderTimeline();
+    renderProgram();
+    renderFaq();
+    renderKontak();
+    startCountdown('2026-09-02T00:00:00+07:00');
+    renderFooter();
+    applyResponsive();
+    window.addEventListener('resize', applyResponsive);
+
+    const sections = ['hero', 'prestasi', 'misi', 'program', 'kontak']
+      .map(id => el(id))
+      .filter(Boolean);
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries
+        .filter(entry => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) updateActiveNavLink(`#${visible.target.id}`);
+    }, { rootMargin: '-25% 0px -55% 0px', threshold: [0, 0.25, 0.5, 1] });
+    sections.forEach(section => observer.observe(section));
+  });
+  </script>
+</body>
+</html>
