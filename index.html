@@ -1104,17 +1104,17 @@
 
     // Desktop CTA
     const ctaBtn = document.createElement('a');
-    ctaBtn.href = d.ctaHref;
+    // ctaBtn.href = d.ctaHref;
     ctaBtn.textContent = d.ctaLabel;
     ctaBtn.className = 'btn-primary';
     ctaBtn.style.fontSize = '0.875rem';
     ctaBtn.style.padding = '0.5rem 1.25rem';
-    linksEl.appendChild(ctaBtn);
+    // linksEl.appendChild(ctaBtn);
 
     // Mobile CTA
     const ctaMobile = ctaBtn.cloneNode(true);
     ctaMobile.addEventListener('click', closeMobileMenu);
-    mobileCta.appendChild(ctaMobile);
+    // mobileCta.appendChild(ctaMobile);
 
     updateActiveNavLink('#hero');
   }
@@ -1182,10 +1182,10 @@
     // CTA buttons
     const ctaWrap = el('hero-cta');
     const btnP = document.createElement('a');
-    btnP.href = d.cta.primary.href;
-    btnP.textContent = d.cta.primary.label;
+    // btnP.href = d.cta.primary.href;
+    // btnP.textContent = d.cta.primary.label;
     btnP.className = 'btn-primary';
-    ctaWrap.appendChild(btnP);
+    // ctaWrap.appendChild(btnP);
 
     const btnS = document.createElement('a');
     btnS.href = d.cta.secondary.href;
@@ -1505,8 +1505,8 @@
     setupImagePlaceholder('cta-logo', 'cta-logo-fallback', card.logoSrc, card.logoAlt);
 
     const ctaCardBtn = el('cta-card-btn');
-    ctaCardBtn.href = card.ctaHref;
-    ctaCardBtn.textContent = "Ayo jadi pilih #3 - Jadilh Timses 03";
+    // ctaCardBtn.href = card.ctaHref;
+    ctaCardBtn.textContent = "Ayo pilih #3";
     ctaCardBtn.style.width = '100%';
     ctaCardBtn.style.textAlign = 'center';
   }
@@ -1642,10 +1642,50 @@
     menu.style.display = open ? 'none' : 'flex';
   }
 
+  function isWebsiteClosed() {
+    const now = new Date();
+    return now.getMonth() === 8 && now.getDate() >= 1;
+  }
+
+  function showClosedPage() {
+    document.body.innerHTML = `
+      <main style="
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #1c1c17;
+        color: #fcf9f0;
+        font-family: 'JetBrains Mono', monospace;
+        padding: 2rem;
+      ">
+        <div style="
+          max-width: 760px;
+          text-align: center;
+          border: 6px solid #fcf9f0;
+          background: #910000;
+          box-shadow: 12px 12px 0 0 #fed65b;
+          padding: 2.5rem 2rem;
+        ">
+          <div style="font-size: 1rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.9; margin-bottom: 1rem;">
+            Mohon maaf !
+          </div>
+          <div style="font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1.3; font-weight: 700; text-transform: uppercase;">
+            web telah di tutup karena sudah masuk ke hari tenang
+            </div>
+        </div>
+      </main>
+    `;
+  }
+
   /* ──────────────────────────────────────────────────────────
      INIT
   ────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
+    if (isWebsiteClosed()) {
+      showClosedPage();
+      return;
+    }
+
     renderNav();
     renderHero();
     renderMisi();
