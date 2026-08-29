@@ -132,7 +132,7 @@ const SITE_DATA = {
         icon: "lightbulb",
         inisial: "A",
         judul: "26 PROJECT",
-        deskripsi:  "proyek kolaboratif antarkelas, jurusan, atau ekskul untuk menghasilkan karya atau kegiatan yang bermanfaat bagi sekolah",
+        deskripsi: "proyek kolaboratif antarkelas, jurusan, atau ekskul untuk menghasilkan karya atau kegiatan yang bermanfaat bagi sekolah",
         variant: "secondary",
       },
       {
@@ -187,9 +187,8 @@ const SITE_DATA = {
   // FOOTER
   // ----------------------------------------------------------
   footer: {
-    brandName: "DEWAN TOPI JERAMI",
-    copyright: "© 2024 DEWAN AKADEMI GRAND LINE. TIDAK ADA HADIAH UNTUK PENGECUT.",
-
+    brandName: "pilih #03",
+    copyright: "© 2026 tim pemenangan daffa khasyi zhafar. ",
   },
 
 };
