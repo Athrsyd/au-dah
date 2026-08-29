@@ -37,7 +37,7 @@ const SITE_DATA = {
     },
     wantedPoster: {
       label: "DICARI",               // Teks di header poster
-      imageSrc: "./image.png",                     // ← Isi dengan path foto kandidat, contoh: "./foto.jpg"
+      imageSrc: "./image.webp",                     // ← Isi dengan path foto kandidat, contoh: "./foto.jpg"
       imageAlt: "Foto Kandidat",
       rewardLabel: "HADIAH",
       rewardValue: "3,000,000,000",       // Angka "bounty" — boleh simbol, teks, dll.
@@ -176,7 +176,7 @@ const SITE_DATA = {
       // { icon: "forum", label: "WHATSAPP", href: "https://chat.whatsapp.com/DrnoSwFa88w7KNDNaahTN9?s=sw&p=a&mlu=4" },
     ],
     ctaCard: {
-      logoSrc: "./image1.png",                     // ← Isi dengan path logo tim, contoh: "./logo.png"
+      logoSrc: "./asset/image1.webp",                     // ← Isi dengan path logo tim, contoh: "./logo.png"
       logoAlt: "Logo Tim Kampanye",
       ctaLabel: "GABUNG BERSAMA KAMI",
       ctaHref: "https://chat.whatsapp.com/DrnoSwFa88w7KNDNaahTN9?s=sw&p=a&mlu=4",
