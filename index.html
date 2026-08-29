@@ -1670,7 +1670,7 @@
             Mohon maaf !
           </div>
           <div style="font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1.3; font-weight: 700; text-transform: uppercase;">
-            web telah di tutup karena sudah masuk ke hari tenang
+            Web sedang di tutup
             </div>
         </div>
       </main>
@@ -1681,7 +1681,7 @@
      INIT
   ────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
-    if (isWebsiteClosed()) {
+    if (!isWebsiteClosed()) {
       showClosedPage();
       return;
     }
