@@ -383,8 +383,8 @@
         width: 100% !important;
         justify-self: stretch !important;
       }
-      #prestasi > div > div { flex-direction: column !important; gap: 2rem !important; }
-      #prestasi > div > div > div { width: 100%; min-width: 0 !important; }
+      #prestasi > div { flex-direction: column !important; align-items: stretch !important; }
+      #prestasi > div > div { width: 100% !important; min-width: 0 !important; }
       #misi-grid .wanted-card, #program-grid > .group > div:last-child { padding: 1.5rem !important; }
       #timeline-grid > div { width: 100%; }
       #faq-title { padding-bottom: 0.35rem !important; }
@@ -392,6 +392,16 @@
       #faq-list summary { padding: 1rem !important; font-size: 1.05rem !important; }
       #faq-list summary span:first-child { min-width: 0; }
       #faq-list div > div { padding-left: 1rem !important; padding-right: 1rem !important; font-size: 0.95rem !important; line-height: 1.55 !important; }
+
+      #team > div {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+      }
+      #team > div > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+      }
 
       #kontak > div:nth-child(2) { flex-direction: column !important; align-items: stretch !important; }
       #kontak > div:nth-child(2) > div { min-width: 0 !important; width: 100%; }
@@ -833,7 +843,7 @@
         transform: rotate(-1deg);
       ">AWAK KAPAL KAMI</h2>
 
-      <div style="
+      <div id="team-grid" style="
         width: min(100%, 980px);
         margin: 0 auto;
         display: grid;
@@ -851,8 +861,8 @@
           transform: rotate(-2deg);
         ">
           <div style="width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 4px solid var(--color-ink); background: #f0efe8; margin-bottom: 1rem;">
-            <a href="asset/image.png" class="">
-              <img src="asset/image.png" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <a href="asset/image.webp" class="">
+              <img src="asset/image.webp" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
             </a>
           </div>
           <div style="display: inline-block; background: var(--color-haki-red-vivid); color: #fff; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.9rem; border: 3px solid var(--color-ink); margin-bottom: 0.6rem; font-size: 0.78rem;">
@@ -869,8 +879,8 @@
           transform: rotate(1deg);
         ">
           <div style="width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 4px solid var(--color-ink); background: #f0efe8; margin-bottom: 1rem;">
-            <a href="asset/image1.png" class="">
-              <img src="asset/image1.png" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <a href="asset/image1.webp" class="">
+              <img src="asset/image1.webp" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
             </a>          </div>
           <div style="display: inline-block; background: var(--color-grand-gold); color: var(--color-ink); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.9rem; border: 3px solid var(--color-ink); margin-bottom: 0.6rem; font-size: 0.78rem;">
             TIM SUKSES
@@ -886,8 +896,8 @@
           transform: rotate(2deg);
         ">
           <div style="width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 4px solid var(--color-ink); background: #f0efe8; margin-bottom: 1rem;">
-            <a href="asset/image2.png" class="">
-              <img src="asset/image2.png" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <a href="asset/image2.webp" class="">
+              <img src="asset/image2.webp" alt="Tim sukses calon ketua OSIS 1" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
             </a>          </div>
           <div style="display: inline-block; background: var(--color-haki-red-vivid); color: #fff; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.9rem; border: 3px solid var(--color-ink); margin-bottom: 0.6rem; font-size: 0.78rem;">
             TIM SUKSES
@@ -1596,6 +1606,24 @@
       }
     });
 
+    const teamGrid = el('team-grid');
+    if (teamGrid) {
+      teamGrid.style.gridTemplateColumns = isMobile ? '1fr' : 'repeat(2, minmax(280px, 1fr))';
+      teamGrid.style.width = isMobile ? '100%' : 'min(100%, 980px)';
+    }
+
+    const teamCards = document.querySelectorAll('#team-grid > div');
+    teamCards.forEach(card => {
+      if (isMobile) {
+        card.style.width = '100%';
+        card.style.maxWidth = '100%';
+        card.style.transform = 'none';
+      } else {
+        card.style.width = '';
+        card.style.maxWidth = '';
+      }
+    });
+
     // Footer
     const footer = document.querySelector('footer');
     if (footer) {
@@ -1626,7 +1654,7 @@
     renderProgram();
     renderFaq();
     renderKontak();
-    startCountdown('2026-09-02T07:00:00+07:00');
+    startCountdown('2026-09-02T00:00:00+07:00');
     renderFooter();
     applyResponsive();
     window.addEventListener('resize', applyResponsive);
