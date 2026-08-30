@@ -1681,7 +1681,7 @@
      INIT
   ────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
-    if (isWebsiteClosed()) {
+    if (!isWebsiteClosed()) {
       showClosedPage();
       return;
     }
