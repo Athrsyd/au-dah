@@ -30,9 +30,9 @@ const SITE_DATA = {
     headlinePart1: "Beriman dalam prinsip, berani dalam tindakan,",
     headlinePart2: "bertanggung jawab dalam perubahan.",            // Bagian headline berwarna merah
     candidateName: "Dafa Khasyi Zhafar | XI TITL 1",     // Nama kandidat
-    tagline: "Siap merombak OSIS? Gabung bersama kami dan mari berlayar menuju akademi yang lebih seru dan baik. Pengecut dilarang ikut. Hadiri pemilihannya, pilih #3 dan buktikan bahwa kita bisa membuat perubahan yang positif di sekolah.",
+    tagline: "Siap membawa perubahan di OSIS? Gabung bersama kami dan mari berlayar menuju sekolah yang lebih aktif, positif, dan berdaya. Hadiri pemilihannya, pilih #3, dan jadilah bagian dari perubahan yang bermanfaat untuk lingkungan sekolah.",
     cta: {
-      primary: { label: "PILIH daffa", href: "https://chat.whatsapp.com/DrnoSwFa88w7KNDNaahTN9?s=sw&p=a&mlu=4" },
+      primary: { label: "PILIH daffa", href: "" },
       secondary: { label: "Siapa dia?", href: "#prestasi" },
     },
     wantedPoster: {
@@ -179,7 +179,7 @@ const SITE_DATA = {
       logoSrc: "./asset/image1.webp",                     // ← Isi dengan path logo tim, contoh: "./logo.png"
       logoAlt: "Logo Tim Kampanye",
       ctaLabel: "GABUNG BERSAMA KAMI",
-      ctaHref: "https://chat.whatsapp.com/DrnoSwFa88w7KNDNaahTN9?s=sw&p=a&mlu=4",
+      ctaHref: "",
     },
   },
 
